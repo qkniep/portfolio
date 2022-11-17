@@ -52,7 +52,7 @@ export default function Home() {
         </p>
         <p hidden={slide !== 3} className="w-1/2 my-8 text-xl">
           At age 11, I started teaching myself programming with free online resources.
-          I like learning new skills, constantly try new technologies, and enjoy understanding why and how things work (or don't).
+          I like learning new skills, constantly try new technologies, and enjoy understanding why and how things work (or don&apos;t).
         </p>
 
         <div className="flex flex-row h-8 mt-4">
