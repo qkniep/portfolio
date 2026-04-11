@@ -2,6 +2,8 @@
 
 Static portfolio website for Quentin Kniep (distributed systems researcher at Anza, PhD at ETH Zurich).
 
+![Screenshot](screenshot.png)
+
 ## Structure
 
 ```
