@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantifying Liveness and Safety of Avalanche's Sno... &mdash; Quentin Kniep</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+  <div class="scan-lines"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="logo"><a href="../index.html" style="color:inherit;text-decoration:none;">
+        <span class="bracket">[</span>QK<span class="bracket">]</span> &mdash; Research &amp; Systems</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Index</a></li>
+        <li><a href="../engineering.html"<>Engineering</a></li>
+        <li><a href="../research.html" class="active"<>Research</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Index</a> / <a href="../research.html"<>Research</a> / Quantifying Liveness and Safety of Avalanche's Sno...</div>
+      <h1>Quantifying Liveness and Safety of Avalanche&#x27;s Snowball</h1>
+      <p class="subtitle">
+        <span class="self">Quentin Kniep</span>, Maxime Laval, Jakub Sliwinski, Roger Wattenhofer<br>
+        ESORICS 2024
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <div class="container">
+      <div class="detail-layout">
+        <div class="detail-main">
+          <h2>Abstract</h2>
+          <div class="abstract">
+            <p>This work examines the resilience properties of the Snowball and Avalanche protocols that underlie the popular Avalanche blockchain. We experimentally quantify the resilience of Snowball using a simulation implemented in Rust, where the adversary strategically rebalances the network to delay termination.</p>
+
+            <p>We show that in a network of n nodes of equal stake, the adversary is able to break liveness when controlling Ω(√n) nodes. Specifically, for n = 2000, a simple adversary controlling 5.2% of stake can successfully attack liveness. When the adversary is given additional information about the state of the network (without any communication or other advantages), the stake needed for a successful attack is as little as 2.8%. We show that the adversary can break safety in time exponentially dependent on their stake, and inversely linearly related to the size of the network, e.g. in 265 rounds in expectation when the adversary controls 25% of a network of 3000.</p>
+
+            <p>We conclude that Snowball and Avalanche are akin to Byzantine reliable broadcast protocols as opposed to consensus.</p>
+          </div>
+
+          <figure>
+            <img src="img/avalanche.png" alt="Figure">
+          </figure>
+
+          <h2>BibTeX</h2>
+          <div class="abstract">
+            <button class="copy-btn" onclick="copyBibtex(this)">Copy</button>
+            <pre style="background:var(--bg-secondary);padding:1.25rem;font-size:0.78rem;line-height:1.6;overflow-x:auto;font-family:var(--font-code);color:var(--text-secondary);">@inproceedings{kniep2024QuantifyingLiveness,
+  author    = {Q. Kniep and Maxime Laval and Jakub Sliwinski and Roger Wattenhofer},
+  title     = {Quantifying Liveness and Safety of Avalanche&#x27;s Snowball},
+  booktitle = {ESORICS 2024},
+  year      = {2024}
+}</pre>
+          </div>
+        </div>
+
+        <div class="detail-sidebar">
+          <div class="pdf-preview">
+            <a href="https://arxiv.org/abs/2409.02217" target="_blank" rel="noopener noreferrer">
+              <img src="img/quantifying-liveness-preview.png" alt="PDF Preview" style="width:100%;aspect-ratio:8.5/11;">
+            </a>
+            <a href="https://arxiv.org/abs/2409.02217" class="download-btn" target="_blank" rel="noopener noreferrer">&#8595; PDF / arXiv</a>
+          </div>
+
+          <div class="sidebar-block" style="margin-top:1rem;">
+            <div class="block-label">Venue</div>
+            <div class="block-value"><span class="tag venue">ESORICS 2024</span></div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Year</div>
+            <div class="block-value">2024</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Authors</div>
+            <div class="block-value"><span style="color:var(--accent);">Quentin Kniep</span><br>
+                        Maxime Laval<br>
+                        Jakub Sliwinski<br>
+                        Roger Wattenhofer</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Citations</div>
+            <div class="block-value">1 on Google Scholar</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Links</div>
+            <div class="block-value">
+              <a href="https://arxiv.org/abs/2409.02217" target="_blank" rel="noopener noreferrer">arXiv &#8599;</a>
+              <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar &#8599;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-left">&copy; 2025 Quentin Kniep<br>
+        Built with conviction (and <a href="https://opencode.ai/" target="_blank" rel="noopener noreferrer">OpenCode</a>)</div>
+      <div class="footer-links">
+        <a href="https://github.com/qkniep" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://twitter.com/qkniep" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://www.linkedin.com/in/qkniep" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:hello@quentinkniep.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/grain.js"></script>
+</body>
+</html>

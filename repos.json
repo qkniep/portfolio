@@ -1,0 +1,155 @@
+[
+  {
+    "name": "alpenglow",
+    "stars": 135,
+    "language": "Rust",
+    "description": "Alpenglow: Global High-Performance Proof-of-Stake Blockchain with Erasure Coding",
+    "url": "https://github.com/qkniep/alpenglow",
+    "featured": true,
+    "lang_tag": "rust"
+  },
+  {
+    "name": "pqwg-rust",
+    "stars": 8,
+    "language": "Rust",
+    "description": "PQ-safe userspace WireGuard\u00ae Implementation in Rust",
+    "url": "https://github.com/qkniep/pqwg-rust",
+    "featured": true,
+    "lang_tag": "rust"
+  },
+  {
+    "name": "js-regex",
+    "stars": 7,
+    "language": "Rust",
+    "description": "Rust port of regexpp (ECMAScript regular expression parser)",
+    "url": "https://github.com/qkniep/js-regex",
+    "featured": true,
+    "lang_tag": "rust"
+  },
+  {
+    "name": "multi-paxos-rs",
+    "stars": 4,
+    "language": "Rust",
+    "description": "Multi-Paxos replicated log in Rust",
+    "url": "https://github.com/qkniep/multi-paxos-rs",
+    "featured": true,
+    "lang_tag": "rust"
+  },
+  {
+    "name": "Simetra",
+    "stars": 3,
+    "language": "C++",
+    "description": "Low-poly procedural terrain generation.",
+    "url": "https://github.com/qkniep/Simetra",
+    "featured": true,
+    "lang_tag": "cpp"
+  },
+  {
+    "name": "algorand-rs",
+    "stars": 2,
+    "language": "Rust",
+    "description": "Rust implementation of Algorand blockchain",
+    "url": "https://github.com/qkniep/algorand-rs",
+    "featured": false,
+    "lang_tag": "rust"
+  },
+  {
+    "name": "PQ-FIDO_sd-MSS",
+    "stars": 1,
+    "language": "Rust",
+    "description": "Exploring possibility of PQ FIDO Security Keys based on sd-MSS, a novel few-time signature scheme.",
+    "url": "https://github.com/qkniep/PQ-FIDO_sd-MSS",
+    "featured": false,
+    "lang_tag": "rust"
+  },
+  {
+    "name": "cypress",
+    "stars": 0,
+    "language": "Rust",
+    "description": "Attach a progress bar to any CLI tool",
+    "url": "https://github.com/qkniep/cypress",
+    "featured": false,
+    "lang_tag": "rust"
+  },
+  {
+    "name": "rs-algorand-sdk",
+    "stars": 0,
+    "language": "Rust",
+    "description": "Algorand Rust SDK",
+    "url": "https://github.com/qkniep/rs-algorand-sdk",
+    "featured": false,
+    "lang_tag": "rust"
+  },
+  {
+    "name": "qdb",
+    "stars": 0,
+    "language": "Rust",
+    "description": "DBMS for fun",
+    "url": "https://github.com/qkniep/qdb",
+    "featured": false,
+    "lang_tag": "rust"
+  },
+  {
+    "name": "BlackjackRust",
+    "stars": 0,
+    "language": "Rust",
+    "description": "A Blackjack simulator for testing card counting strategies written in Rust.",
+    "url": "https://github.com/qkniep/BlackjackRust",
+    "featured": false,
+    "lang_tag": "rust"
+  },
+  {
+    "name": "baby-google",
+    "stars": 0,
+    "language": "Go",
+    "description": "Tiny 1-Day Clone of Google",
+    "url": "https://github.com/qkniep/baby-google",
+    "featured": false,
+    "lang_tag": "go"
+  },
+  {
+    "name": "project-euler",
+    "stars": 0,
+    "language": "Haskell",
+    "description": "Project Euler Solutions in Haskell",
+    "url": "https://github.com/qkniep/project-euler",
+    "featured": false,
+    "lang_tag": "haskell"
+  },
+  {
+    "name": "google-code-jam",
+    "stars": 0,
+    "language": "C++",
+    "description": "Here I upload my solutions for past Google Code Jams.",
+    "url": "https://github.com/qkniep/google-code-jam",
+    "featured": false,
+    "lang_tag": "cpp"
+  },
+  {
+    "name": "path-tracer",
+    "stars": 0,
+    "language": "Go",
+    "description": "3D path tracing renderer",
+    "url": "https://github.com/qkniep/path-tracer",
+    "featured": false,
+    "lang_tag": "go"
+  },
+  {
+    "name": "moonshot",
+    "stars": 0,
+    "language": "Rust",
+    "description": "GitHub Game Off 2020 Contribution",
+    "url": "https://github.com/qkniep/moonshot",
+    "featured": false,
+    "lang_tag": "rust"
+  },
+  {
+    "name": "naxos",
+    "stars": 0,
+    "language": "Python",
+    "description": "Napster with a paxos cluster as index server",
+    "url": "https://github.com/qkniep/naxos",
+    "featured": false,
+    "lang_tag": "python"
+  }
+]

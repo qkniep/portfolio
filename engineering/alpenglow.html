@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpenglow &mdash; Quentin Kniep</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+  <div class="scan-lines"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="logo"><a href="../index.html" style="color:inherit;text-decoration:none;">
+        <span class="bracket">[</span>QK<span class="bracket">]</span> &mdash; Research &amp; Systems</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Index</a></li>
+        <li><a href="../engineering.html" class="active">Engineering</a></li>
+        <li><a href="../research.html">Research</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Index</a> / <a href="../engineering.html">Engineering</a> / Alpenglow</div>
+      <h1>Alpenglow</h1>
+      <p class="subtitle">
+        Global High-Performance Proof-of-Stake Blockchain with Erasure Coding
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <div class="container">
+      <div class="detail-layout">
+        <div class="detail-main">
+          <h2>Overview</h2>
+          <div class="abstract">
+            <img src="https://raw.githubusercontent.com/qkniep/alpenglow/main/latency_histogram.png" alt="Latency Histogram" style="width:100%;max-width:600px;margin:1rem 0;border:1px solid var(--border);">
+            <p>Alpenglow is a research reference implementation of a novel consensus protocol designed for high-performance Proof-of-Stake blockchains. It introduces erasure coding to improve block propagation and confirmation times, achieving superior throughput under adversarial conditions.</p>
+            <p>The protocol builds on the observation that traditional block propagation becomes a bottleneck as block sizes grow. By encoding blocks into erasure-coded shreds, Alpenglow allows validators to reconstruct blocks from any subset of shreds, dramatically reducing the data required for confirmation.</p>
+          </div>
+
+          <h2>Key Features</h2>
+          <div class="abstract">
+            <ul style="margin-left:1.5rem;line-height:1.8;">
+              <li>Erasure-coded block propagation for improved network efficiency</li>
+              <li>Probabilistic confirmation with configurable safety thresholds</li>
+              <li>Proof-of-Stake leader selection with stake-weighted randomness</li>
+              <li>Resilient to network partitions and adversarial conditions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="detail-sidebar">
+          <div class="sidebar-block">
+            <div class="block-label">Language</div>
+            <div class="block-value">Rust</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Stars</div>
+            <div class="block-value">135 &starf;</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Forks</div>
+            <div class="block-value">29</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">License</div>
+            <div class="block-value">Apache-2.0</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Links</div>
+            <div class="block-value">
+              <a href="https://github.com/qkniep/alpenglow" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a>
+              <a href="https://anza.xyz/blog/alpenglow-a-new-consensus-for-solana" target="_blank" rel="noopener noreferrer">Blog Post &#8599;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-left">&copy; 2025 Quentin Kniep &middot; Built with conviction (and <a href="https://opencode.ai/" target="_blank" rel="noopener noreferrer">OpenCode</a>)</div>
+      <div class="footer-links">
+        <a href="https://github.com/qkniep" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://twitter.com/qkniep" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://www.linkedin.com/in/qkniep" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:hello@quentinkniep.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/grain.js"></script>
+</body>
+</html>

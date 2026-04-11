@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quentin Kniep — Researcher &amp; Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+  <div class="scan-lines"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="logo"><a href="index.html" style="color:inherit;text-decoration:none;">
+        <span class="bracket">[</span>QK<span class="bracket">]</span> &mdash; Research &amp; Systems</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Index</a></li>
+        <li><a href="engineering.html">Engineering</a></li>
+        <li><a href="research.html">Research</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-photo">
+        <img src="img/portrait.jpg" alt="Quentin Kniep">
+      </div>
+      <div class="hero-content">
+        <div class="label">Researcher &middot; Engineer</div>
+        <h1>Quentin <span class="accent">Kniep</span></h1>
+        <p class="tagline">
+          Distributed systems and applied cryptography researcher at Anza and ETH Zurich.
+          Designing next-generation consensus protocols for robust high-performance blockchains.
+        </p>
+        <div class="hero-affiliations">
+          <a href="https://anza.xyz/" target="_blank" rel="noopener noreferrer" class="affiliation">
+            <svg class="affiliation-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 36" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M94.691 34.53v-3.786l11.063-14.246H94.727v-3.604h16.413v3.825L99.889 30.923h11.637v3.607H94.688h.003z" clip-rule="evenodd"/><path fill="currentColor" d="M77.464 34.527H72.95V12.894h4.406v3.019h.153l3.355-3.389h3.325c5.416 0 7.9 4.139 7.9 9.223V34.53h-4.65V21.523c0-2.654-1.489-5.398-4.604-5.398H77.51l-.045 18.402zM65.33 31.242h-6.59c-2.032 0-3.206-1.573-3.206-3.284 0-2.296 2.12-3.601 4.424-3.87l5.371-.585v7.74zm-6.816 3.601h3.313l3.505-3.359h.243v3.043h4.406V21.434c-.003-5.76-3.612-8.91-9.48-8.91-4.695 0-8.352 2.027-8.804 6.796h4.559c0-2.07 1.578-3.374 4.334-3.374 2.933 0 4.694 1.484 4.74 4.32l-6.004.63c-3.927.403-8.576 2.022-8.576 6.793 0 4.183 3.565 7.154 7.764 7.154zm68.706-3.601h-6.59c-2.031 0-3.206-1.573-3.206-3.284 0-2.296 2.121-3.601 4.425-3.87l5.371-.585v7.74zm-6.815 3.601h3.313l3.505-3.359h.242v3.043h4.407V21.434c-.003-5.76-3.613-8.91-9.481-8.91-4.694 0-8.352 2.025-8.801 6.793h4.559c0-2.07 1.579-3.374 4.335-3.374 2.932 0 4.694 1.484 4.739 4.32l-6.003.63c-3.927.406-8.576 2.025-8.576 6.793 0 4.183 3.564 7.154 7.764 7.154l-.003.003zM9.838 11.048 19.136 0l15.517 8.93 7.231 26.903H24.192L9.838 11.048z"/><path fill="currentColor" d="M5.695 18.778.333 25.15l2.873 10.68h9.885l5.563-9.593-12.959-7.459z"/></svg>
+            <span class="affiliation-role">Senior Researcher</span>
+          </a>
+          <a href="https://ethz.ch/" target="_blank" rel="noopener noreferrer" class="affiliation">
+            <svg class="affiliation-logo affiliation-logo-light" viewBox="-4 -4 128 28" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M43.6892 7.59685H39.3218L40.8555 0H3.90295L0 19.6252H14.7315L15.7334 14.5606H7.02833L7.52612 12.0283H16.2369L17.1209 7.59685H8.43034L8.92687 5.06457H22.7592L19.8638 19.6252H25.8707L28.7649 5.06457H33.8077L30.9135 19.6252H36.9665L38.4642 12.0283H42.8303L41.3338 19.6252H47.3577L51.2632 0H45.2229L43.6892 7.59685ZM69.4622 2.53228H71.4717L71.9695 0H69.9695L69.4622 2.53228ZM74.616 2.53228H76.6267L77.1232 0H75.1232L74.616 2.53228ZM93.4111 2.53228H95.4205L95.9196 0H93.9183L93.4111 2.53228ZM103.47 6.27247C99.9631 6.27247 97.5024 8.76677 96.7148 13.1172C96.5907 13.7981 96.5275 14.4888 96.5258 15.181C96.5258 18.1527 98.3109 20 101.189 20C102.013 20.0022 102.829 19.8372 103.588 19.515C104.347 19.1928 105.033 18.7199 105.606 18.1248L105.623 18.1058L104.509 16.7333L104.489 16.7093L104.467 16.7321C104.087 17.2105 103.604 17.597 103.055 17.8628C102.506 18.1287 101.905 18.2671 101.295 18.2679C99.9234 18.2679 98.4571 17.4411 98.4571 15.1266C98.4621 14.4552 98.5331 13.786 98.6688 13.1286C98.8751 11.7182 99.4666 10.3928 100.378 9.29981C100.745 8.89298 101.193 8.56784 101.694 8.34522C102.194 8.1226 102.734 8.00742 103.281 8.00708C103.806 7.9833 104.326 8.10937 104.782 8.37067C105.238 8.63197 105.611 9.0178 105.858 9.4834L105.874 9.50999L107.293 8.29956L107.313 8.28183L107.298 8.26031C106.89 7.62018 106.321 7.09939 105.649 6.75041C104.977 6.40142 104.225 6.23657 103.47 6.27247ZM116.295 5.98822C115.59 5.9532 114.886 6.07022 114.23 6.33141C113.573 6.59261 112.98 6.99193 112.49 7.50252L113.998 0H112.054L108.15 19.6252H110.093L111.714 11.3807C112.408 7.90642 115.092 7.73043 115.621 7.73043C115.937 7.69809 116.256 7.73604 116.555 7.84158C116.855 7.94713 117.128 8.11768 117.354 8.3411C117.581 8.56453 117.755 8.83536 117.866 9.13432C117.977 9.43329 118.02 9.75306 117.994 10.0709C117.984 10.4893 117.939 10.9062 117.858 11.3168L116.209 19.6252H118.15L119.855 11.1364C119.943 10.6954 119.989 10.2471 119.991 9.79741C120.026 9.29629 119.955 8.79341 119.783 8.32176C119.611 7.85011 119.342 7.42034 118.993 7.06064C118.644 6.70095 118.223 6.41946 117.758 6.23464C117.293 6.04981 116.795 5.96584 116.295 5.98822ZM90.0967 19.5929L90.0904 19.6258H92.0066L94.6215 6.33134H92.7375L90.0967 19.5929ZM54.9538 8.19447L54.9481 8.23056H61.4522L52.8769 18.021L52.8731 18.0261L52.5511 19.6258H61.7868L62.1503 17.7266H55.2462L63.8466 7.93618L63.8504 7.92985L64.1736 6.33134H55.3129L54.9538 8.19447ZM86.9064 6.16928C86.2145 6.15103 85.5279 6.29363 84.8999 6.58596C84.272 6.87828 83.7198 7.31243 83.2864 7.85451L83.5838 6.3611L83.5888 6.33134H81.6985L79.0854 19.5929L79.0803 19.6258H80.999L82.597 11.4909C83.006 9.4049 84.5932 7.88996 86.3739 7.88996C86.7328 7.88131 87.0882 7.96143 87.4089 8.12327C87.7297 8.28511 88.0059 8.52371 88.2133 8.81805L88.2322 8.8421L89.7879 7.43415L89.7728 7.41516C89.4206 7.00234 88.9794 6.67558 88.4828 6.4597C87.9861 6.24383 87.447 6.1445 86.9064 6.16928ZM75.3318 6.33134H77.275L77.27 6.363L74.6588 19.6258H72.7678L72.7741 19.5929L73.0243 18.2128C72.5408 18.7377 71.9491 19.1504 71.2906 19.422C70.6321 19.6935 69.9226 19.8176 69.2114 19.7854C68.7188 19.8075 68.227 19.7247 67.7685 19.5423C67.31 19.3599 66.8951 19.0821 66.5511 18.727C66.2071 18.372 65.9418 17.9479 65.7726 17.4825C65.6033 17.0171 65.5341 16.521 65.5694 16.0268C65.5748 15.6225 65.6206 15.2198 65.7061 14.8246L65.7282 14.7043L67.3803 6.33134H69.2978L67.6677 14.5283C67.5904 14.9334 67.5468 15.3442 67.5372 15.7565C67.5127 16.0718 67.5576 16.3887 67.6687 16.6847C67.7798 16.9806 67.9545 17.2483 68.1802 17.4688C68.406 17.6892 68.6773 17.857 68.9749 17.9602C69.2724 18.0635 69.589 18.0995 69.902 18.0659C70.4219 18.0659 73.0457 17.8912 73.7306 14.4619L75.3318 6.33134Z"/></svg>
+            <span class="affiliation-role">PhD Researcher</span>
+          </a>
+          <a href="https://www.mystenlabs.com/" target="_blank" rel="noopener noreferrer" class="affiliation">
+            <svg class="affiliation-logo affiliation-logo-mysten" viewBox="269 84 423 218" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M368 211.58C408.058 211.58 423.918 147.79 463.97 147.79V84C423.918 84 408.058 147.79 368 147.79V211.58Z" fill="currentColor"/><path d="M464.041 211.58C504.092 211.58 519.959 147.79 560.01 147.79V84C519.959 84 504.092 147.79 464.041 147.79V211.58Z" fill="currentColor"/><path d="M560.01 211.58C568.494 211.58 576.631 208.22 582.63 202.238C588.63 196.257 592 188.144 592 179.685C592 171.226 588.63 163.113 582.63 157.132C576.631 151.15 568.494 147.79 560.01 147.79V211.58Z" fill="currentColor"/><path d="M306.264 251.302H325.826V300.953H313.021V261.587L302.491 300.953H289.112L279.505 261.88V300.953H269.203V251.302H289.125L297.153 285.212L306.264 251.302Z" fill="currentColor"/><path d="M358.204 265.496H370.246L348.812 315.147H337.065L343.326 300.74L328.073 265.496H341.453L349.28 286.986L358.204 265.496Z" fill="currentColor"/><path d="M369.938 289.401H383.452C383.599 293.296 385.727 295.991 389.861 295.991C392.63 295.991 394.557 294.857 394.557 292.936C394.557 290.268 391.881 289.468 387.158 287.974L380.682 285.986C374.059 283.865 370.648 280.45 370.648 275.314C370.648 268.35 377.123 264.388 388.51 264.388C399.601 264.388 406.077 268.39 406.933 275.661H394.557C394.424 274.168 393.706 272.787 392.559 271.818C391.412 270.849 389.928 270.37 388.429 270.485C385.512 270.485 384.161 271.819 384.161 273.246C384.161 275.594 387.158 276.514 391.279 277.795L397.822 279.849C401.528 280.983 408.071 283.465 408.071 290.415C408.071 297.365 401.528 302.114 389.219 302.114C377.766 302.087 371.076 297.618 369.938 289.401Z" fill="currentColor"/><path d="M432.97 272.646H426.709V289.988C426.709 293.176 427.137 293.603 431.833 293.603H432.97V300.98H424.943C416.339 300.98 413.851 298.499 413.851 288.787V272.646H409.556V265.549H413.904V257.745L426.709 252.782V265.549H432.97V272.646Z" fill="currentColor"/><path d="M473.511 285.146H448.491C448.772 293.79 450.913 295.711 454.324 295.711C457.522 295.711 459.168 293.723 459.596 289.401H472.829C471.972 296.845 466.058 302.087 454.324 302.087C440.717 302.087 435.111 293.99 435.111 283.585C435.111 272.659 440.878 264.362 454.672 264.362C466.42 264.362 473.524 271.739 473.524 283.798L473.511 285.146ZM448.825 278.756H459.783V278.542C459.783 272.593 457.228 270.738 454.592 270.738C450.819 270.738 449.039 274.353 448.825 278.756Z" fill="currentColor"/><path d="M513.034 277.195V300.953H500.23V279.316C500.23 274.98 498.892 272.859 495.534 272.859C492.175 272.859 490.342 275.194 490.342 280.863V300.873H477.538V272.086C477.538 270.458 477.538 267.19 477.391 265.496H490.128V270.245C491.761 266.843 495.48 264.362 501.153 264.362C508.766 264.362 513.034 268.19 513.034 277.195Z" fill="currentColor"/><path d="M546.658 292.229H569.243V300.953H533.117V251.302H546.631L546.658 292.229Z" fill="currentColor"/><path d="M595.668 300.953V295.991C593.607 299.473 590.048 301.46 584.134 301.46C576.026 301.46 571.624 297.338 571.624 290.962C571.624 284.078 576.976 281.877 584.777 280.29L587.988 279.649C593.741 278.515 595.454 277.595 595.454 274.834C595.454 272.352 593.888 270.712 591.038 270.712C590.375 270.635 589.703 270.708 589.072 270.927C588.441 271.146 587.868 271.504 587.395 271.975C586.923 272.446 586.564 273.018 586.344 273.647C586.125 274.275 586.051 274.946 586.128 275.607H572.922C573.27 267.883 579.037 264.335 591.132 264.335C603.655 264.335 607.99 268.657 607.99 276.101V295.324C607.99 297.658 607.99 299.579 608.204 300.994L595.668 300.953ZM595.173 287.76V283.505C594.236 283.932 593.099 284.358 591.252 284.999L590.182 285.359C586.703 286.493 584.991 287.267 584.991 289.828C584.991 292.162 586.556 293.83 589.62 293.83C593.152 293.79 595.146 291.455 595.146 287.76H595.173Z" fill="currentColor"/><path d="M650.525 282.944C650.525 293.51 644.825 301.38 634.469 301.38C632.798 301.44 631.133 301.142 629.587 300.507C628.041 299.872 626.649 298.914 625.504 297.698L624.514 300.953H613.128V251.302H625.933V269.111C627.043 267.618 628.493 266.41 630.163 265.584C631.833 264.758 633.675 264.34 635.539 264.362C646.016 264.362 650.525 272.232 650.525 282.944ZM636.503 282.944C636.503 275.074 634.308 271.805 630.963 271.805C627.11 271.805 625.612 275.074 625.612 282.944C625.612 289.321 627.097 293.937 630.963 293.937C635.058 293.99 636.543 289.321 636.543 282.944H636.503Z" fill="currentColor"/><path d="M652.665 289.401H666.179C666.326 293.296 668.453 295.991 672.588 295.991C675.357 295.991 677.27 294.857 677.27 292.936C677.27 290.268 674.595 289.468 669.872 287.974L663.409 285.986C656.719 283.865 653.374 280.45 653.374 275.314C653.374 268.35 659.85 264.388 671.236 264.388C682.328 264.388 688.804 268.39 689.66 275.661H677.284C677.154 274.169 676.439 272.788 675.294 271.819C674.149 270.85 672.667 270.37 671.169 270.485C668.253 270.485 666.901 271.819 666.901 273.246C666.901 275.594 669.885 276.514 674.019 277.795L680.562 279.849C684.268 280.983 690.811 283.465 690.811 290.415C690.811 297.365 684.268 302.114 671.959 302.114C660.492 302.087 653.802 297.618 652.665 289.401Z" fill="currentColor"/></svg>
+            <span class="affiliation-role">Past Intern</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="label">Recent Research</div>
+        <h2>Featured Papers</h2>
+      </div>
+      <div class="paper-list">
+        <a href="research/solana-constellation-fair-internet-capital-markets.html" class="paper-entry" style="text-decoration:none;color:inherit;">
+          <div class="year">2026</div>
+          <div>
+            <h3>Solana Constellation: Fair Internet Capital Markets</h3>
+            <p class="authors"><span class="self">Q. Kniep</span>, M. Resnick, J. Sliwinski, R. Wattenhofer</p>
+            <div class="paper-meta">
+              <span class="tag venue">White Paper</span>
+              <span class="tag">Consensus</span>
+            </div>
+          </div>
+        </a>
+        <a href="research/solana-alpenglow-consensus.html" class="paper-entry" style="text-decoration:none;color:inherit;">
+          <div class="year">2025</div>
+          <div>
+            <h3>Solana Alpenglow Consensus</h3>
+            <p class="authors"><span class="self">Q. Kniep</span>, J. Sliwinski, R. Wattenhofer</p>
+            <div class="paper-meta">
+              <span class="tag venue">White Paper</span>
+              <span class="tag">Consensus</span>
+            </div>
+          </div>
+        </a>
+        <a href="research/pilotfish-distributed-transaction-execution-for-lazy-blockchains.html" class="paper-entry" style="text-decoration:none;color:inherit;">
+          <div class="year">2025</div>
+          <div>
+            <h3>Pilotfish: Distributed Transaction Execution for Lazy Blockchains</h3>
+            <p class="authors"><span class="self">Q. Kniep</span>, L. Kokoris-Kogias, A. Sonnino, I. Zablotchi, N. Zhang</p>
+            <div class="paper-meta">
+              <span class="tag venue">FC 2025</span>
+              <span class="tag">Blockchain</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div style="margin-top:1rem;"><a href="research.html" class="download-btn">More Papers</a></div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="label">Selected Works</div>
+        <h2>Featured Projects</h2>
+      </div>
+      <div class="card-grid">
+        <a href="engineering/alpenglow.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-index">PRJ-001</div>
+          <h3>Alpenglow</h3>
+          <p class="card-desc">
+            Global high-performance Proof-of-Stake blockchain with erasure coding.
+            A new consensus protocol for Solana.
+          </p>
+          <div class="card-meta">
+            <span class="tag lang">Rust</span>
+            <span class="tag">★ 135</span>
+            <span class="tag">Consensus</span>
+          </div>
+        </a>
+        <a href="engineering/pqwg-rust.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-index">PRJ-002</div>
+          <h3>pqwg-rust</h3>
+          <p class="card-desc">
+            Post-quantum safe userspace WireGuard implementation in Rust.
+            Exploring next-generation VPN security.
+          </p>
+          <div class="card-meta">
+            <span class="tag lang">Rust</span>
+            <span class="tag">★ 8</span>
+            <span class="tag">Cryptography</span>
+          </div>
+        </a>
+        <a href="engineering/js-regex.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-index">PRJ-003</div>
+          <h3>js-regex</h3>
+          <p class="card-desc">
+            Rust port of regexpp &mdash; an ECMAScript regular expression parser,
+            faithful to the spec.
+          </p>
+          <div class="card-meta">
+            <span class="tag lang">Rust</span>
+            <span class="tag">★ 7</span>
+            <span class="tag">Parsing</span>
+          </div>
+        </a>
+      </div>
+      <div style="margin-top:1rem;"><a href="engineering.html" class="download-btn">More Projects</a></div>
+    </div>
+  </section>
+
+<footer>
+    <div class="container">
+      <div class="footer-left">&copy; 2026 Quentin Kniep &middot; Built with conviction (and <a href="https://opencode.ai/" target="_blank" rel="noopener noreferrer">OpenCode</a>)</div>
+      <div class="footer-links">
+        <a href="https://github.com/qkniep" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://twitter.com/qkniep" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://www.linkedin.com/in/qkniep" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:hello@quentinkniep.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/grain.js"></script>
+  <script src="js/dots.js"></script>
+</body>
+</html>

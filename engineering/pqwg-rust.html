@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pqwg-rust &mdash; Quentin Kniep</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+  <div class="scan-lines"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="logo"><a href="../index.html" style="color:inherit;text-decoration:none;">
+        <span class="bracket">[</span>QK<span class="bracket">]</span> &mdash; Research &amp; Systems</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Index</a></li>
+        <li><a href="../engineering.html" class="active">Engineering</a></li>
+        <li><a href="../research.html">Research</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Index</a> / <a href="../engineering.html">Engineering</a> / pqwg-rust</div>
+      <h1>pqwg-rust</h1>
+      <p class="subtitle">
+        PQ-safe userspace WireGuard&reg; Implementation in Rust
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <div class="container">
+      <div class="detail-layout">
+        <div class="detail-main">
+          <h2>Overview</h2>
+          <div class="abstract">
+            <img src="https://raw.githubusercontent.com/qkniep/pqwg-rust/master/banner.png" alt="PQ-WG Banner" style="width:100%;max-width:600px;margin:1rem 0;border:1px solid var(--border);">
+            <p>A post-quantum safe userspace implementation of the WireGuard VPN protocol in Rust. This fork of Cloudflare's BoringTun implements post-quantum key exchange mechanisms to provide protection against future quantum computer attacks.</p>
+            <p>The implementation supports multiple post-quantum cryptographic primitives including Kyber, LightSaber, and NTRU, with benchmarking support for comparing handshake performance.</p>
+          </div>
+
+          <h2>Key Features</h2>
+          <div class="abstract">
+            <ul style="margin-left:1.5rem;line-height:1.8;">
+              <li>Post-quantum key exchange (Kyber, LightSaber, NTRU)</li>
+              <li>Userspace implementation for maximum portability</li>
+              <li>Benchmarks for comparing PQ primitives</li>
+              <li>Drop-in replacement for WireGuard</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="detail-sidebar">
+          <div class="sidebar-block">
+            <div class="block-label">Language</div>
+            <div class="block-value">Rust</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Stars</div>
+            <div class="block-value">8 &starf;</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Forks</div>
+            <div class="block-value">3</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">License</div>
+            <div class="block-value">BSD-3-Clause</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Links</div>
+            <div class="block-value">
+              <a href="https://github.com/qkniep/pqwg-rust" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-left">&copy; 2025 Quentin Kniep &middot; Built with conviction (and <a href="https://opencode.ai/" target="_blank" rel="noopener noreferrer">OpenCode</a>)</div>
+      <div class="footer-links">
+        <a href="https://github.com/qkniep" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://twitter.com/qkniep" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://www.linkedin.com/in/qkniep" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:hello@quentinkniep.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/grain.js"></script>
+</body>
+</html>

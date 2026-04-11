@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dissecting the EIP-2930 Optional Access Lists &mdash; Quentin Kniep</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+  <div class="scan-lines"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="logo"><a href="../index.html" style="color:inherit;text-decoration:none;">
+        <span class="bracket">[</span>QK<span class="bracket">]</span> &mdash; Research &amp; Systems</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Index</a></li>
+        <li><a href="../engineering.html"<>Engineering</a></li>
+        <li><a href="../research.html" class="active"<>Research</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Index</a> / <a href="../research.html">Research</a> / Short Paper: Dissecting the EIP-2930</div>
+      <h1>Short Paper: Dissecting the EIP-2930 Optional Access Lists</h1>
+      <p class="subtitle">
+        Lioba Heimbach, <span class="self">Quentin Kniep</span>, Yann Vonlanthen, Roger Wattenhofer, Patrick Züst<br>
+        FC 2024
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <div class="container">
+      <div class="detail-layout">
+        <div class="detail-main">
+          <h2>Abstract</h2>
+          <div class="abstract">
+            <p>Ethereum introduced Transaction Access Lists (TALs) in 2020 to optimize gas costs during transaction execution. In this work, we present a comprehensive analysis of TALs in Ethereum, focusing on adoption, quality, and gas savings. Analyzing a full month of mainnet data with 31,954,474 transactions, we found that only 1.46% of transactions included a TAL, even though 42.6% of transactions would have benefited from it. On average, access lists can save around 0.29% of gas costs, equivalent to approximately 3,450 ETH (roughly US$ 5 Mio) per year. However, 19.6% of TALs included by transactions contained imperfections, causing almost 11.8% of transactions to pay more gas with TAL than without. We find that these inaccuracies are caused by the unknown state at the time of the TAL computation as well as imperfect TAL computations provided by all major Ethereum clients. We thus compare the gas savings when calculating the TAL at the beginning of the block vs. calculating it on the correct state, to find that the unknown state is a major source of TAL inaccuracies. Finally, we implement an ideal TAL computation for the Erigon client to highlight the cost of these flawed implementations.</p>
+          </div>
+
+          <figure>
+            <img src="img/eip2930.png" alt="Figure">
+          </figure>
+
+          <h2>BibTeX</h2>
+          <div class="abstract">
+            <button class="copy-btn" onclick="copyBibtex(this)">Copy</button>
+            <pre style="background:var(--bg-secondary);padding:1.25rem;font-size:0.78rem;line-height:1.6;overflow-x:auto;font-family:var(--font-code);color:var(--text-secondary);">@article{heimbach2023DissectingThe,
+  author    = {Lioba Heimbach and Q. Kniep and Yann Vonlanthen and Roger Wattenhofer and Patrick Züst},
+  title     = {Dissecting the EIP-2930 Optional Access Lists},
+  year      = {2023}
+}</pre>
+          </div>
+        </div>
+
+        <div class="detail-sidebar">
+          <div class="pdf-preview">
+            <a href="https://arxiv.org/abs/2312.06574" target="_blank" rel="noopener noreferrer">
+              <img src="img/dissecting-eip2930-preview.png" alt="PDF Preview" style="width:100%;aspect-ratio:8.5/11;">
+            </a>
+            <a href="https://arxiv.org/abs/2312.06574" class="download-btn" target="_blank" rel="noopener noreferrer">&#8595; PDF / arXiv</a>
+          </div>
+
+          <div class="sidebar-block" style="margin-top:1rem;">
+            <div class="block-label">Venue</div>
+            <div class="block-value"><span class="tag venue">FC 2024</span></div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Year</div>
+            <div class="block-value">2023</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Authors</div>
+<div class="block-value">          Lioba Heimbach<br>
+                        <span style="color:var(--accent);">Quentin Kniep</span><br>
+                        Yann Vonlanthen<br>
+                        Roger Wattenhofer<br>
+                        Patrick Züst</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Citations</div>
+            <div class="block-value">11 on Google Scholar</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Links</div>
+            <div class="block-value">
+              <a href="https://arxiv.org/abs/2312.06574" target="_blank" rel="noopener noreferrer">arXiv &#8599;</a>
+              <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar &#8599;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-left">&copy; 2025 Quentin Kniep<br>
+        Built with conviction (and <a href="https://opencode.ai/" target="_blank" rel="noopener noreferrer">OpenCode</a>)</div>
+      <div class="footer-links">
+        <a href="https://github.com/qkniep" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://twitter.com/qkniep" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://www.linkedin.com/in/qkniep" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:hello@quentinkniep.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/grain.js"></script>
+</body>
+</html>

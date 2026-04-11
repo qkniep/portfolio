@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Byzantine Fault-Tolerant Aggregate Signatures &mdash; Quentin Kniep</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+  <div class="scan-lines"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="logo"><a href="../index.html" style="color:inherit;text-decoration:none;">
+        <span class="bracket">[</span>QK<span class="bracket">]</span> &mdash; Research &amp; Systems</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Index</a></li>
+        <li><a href="../engineering.html"<>Engineering</a></li>
+        <li><a href="../research.html" class="active"<>Research</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Index</a> / <a href="../research.html"<>Research</a> / Byzantine Fault-Tolerant Aggregate Signatures</div>
+      <h1>Byzantine Fault-Tolerant Aggregate Signatures</h1>
+      <p class="subtitle">
+        <span class="self">Quentin Kniep</span>, Roger Wattenhofer<br>
+        ASIA CCS 2024
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <div class="container">
+      <div class="detail-layout">
+        <div class="detail-main">
+          <h2>Abstract</h2>
+          <div class="abstract">
+            <p>Efficient (non-interactive) aggregate signature schemes in the post-quantum setting are still missing. We define the concept of Byzantine fault-tolerant aggregate signature schemes. This notion fills a middle-ground between interactive and non-interactive signature aggregation. Signers are required to interact but some may fail or misbehave at any point in the signing protocol.</p>
+
+            <p>Then, we provide efficient constructions of such schemes based on lattice assumptions. We show their security in the programmable random oracle model. For N participants they tolerate up to N − 1 Byzantine failures assuming a correct aggregator, and ⌊(N + 1)/3⌋ failures in general. Our final construction is more efficient than Squirrel, the state-of-the-art non-interactive scheme, which in contrast to ours is also just a few-time signature scheme. Asymptotically signature sizes are polylogarithmic in the total number of participants. In the failure-free case our scheme becomes essentially equivalent to — and thus just as efficient as — a state-of-the-art interactive aggregate signature schemes from lattice assumptions. At the same time we make weaker assumptions on the signing protocol.</p>
+
+            <p>Finally, we parameterize, implement, and evaluate our signature scheme. We find that it has aggregate signatures of sizes (i) between 41 KiB (best case) and 151 KiB (worst case) for 1000 signers, (ii) between 59 KiB (best case) and 399 KiB (worst case) for 10,000 signers, and (iii) between 75 KiB (best case) and 750 KiB (worst case) for 100,000 signers. Verification times for our Rust implementation are in practice faster than those of a state-of-the-art implementation of aggregate BLS signatures, at the cost of slower signature aggregation, both by about one order of magnitude.</p>
+          </div>
+
+          <figure>
+            <img src="img/bft_aggsig.png" alt="Figure">
+          </figure>
+
+          <h2>BibTeX</h2>
+          <div class="abstract">
+            <button class="copy-btn" onclick="copyBibtex(this)">Copy</button>
+            <pre style="background:var(--bg-secondary);padding:1.25rem;font-size:0.78rem;line-height:1.6;overflow-x:auto;font-family:var(--font-code);color:var(--text-secondary);">@inproceedings{kniep2024ByzantineFault-tolerant,
+  author    = {Q. Kniep and Roger Wattenhofer},
+  title     = {Byzantine Fault-Tolerant Aggregate Signatures},
+  booktitle = {ASIA CCS 2024},
+  year      = {2024}
+}</pre>
+          </div>
+        </div>
+
+        <div class="detail-sidebar">
+          <div class="pdf-preview">
+            <a href="https://dl.acm.org/doi/10.1145/3634737.3657020" target="_blank" rel="noopener noreferrer">
+              <img src="img/byzantine-aggregate-signatures-preview.png" alt="PDF Preview" style="width:100%;aspect-ratio:8.5/11;">
+            </a>
+            <a href="https://dl.acm.org/doi/10.1145/3634737.3657020" class="download-btn" target="_blank" rel="noopener noreferrer">&#8595; PDF / ACM</a>
+          </div>
+
+          <div class="sidebar-block" style="margin-top:1rem;">
+            <div class="block-label">Venue</div>
+            <div class="block-value"><span class="tag venue">ASIA CCS 2024</span></div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Year</div>
+            <div class="block-value">2024</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Authors</div>
+            <div class="block-value"><span style="color:var(--accent);">Quentin Kniep</span><br>
+                        Roger Wattenhofer</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Citations</div>
+            <div class="block-value">4 on Google Scholar</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Links</div>
+            <div class="block-value">
+              <a href="https://dl.acm.org/doi/10.1145/3634737.3657020" target="_blank" rel="noopener noreferrer">ACM &#8599;</a>
+              <a href="https://tik-db.ee.ethz.ch/file/f79103317bc60a6e7591291cf2b0b0c9/" target="_blank" rel="noopener noreferrer">Slides &#8599;</a>
+              <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar &#8599;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-left">&copy; 2025 Quentin Kniep<br>
+        Built with conviction (and <a href="https://opencode.ai/" target="_blank" rel="noopener noreferrer">OpenCode</a>)</div>
+      <div class="footer-links">
+        <a href="https://github.com/qkniep" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://twitter.com/qkniep" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://www.linkedin.com/in/qkniep" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:hello@quentinkniep.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/grain.js"></script>
+</body>
+</html>

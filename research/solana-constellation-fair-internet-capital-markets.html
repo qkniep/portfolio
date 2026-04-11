@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solana Constellation &mdash; Quentin Kniep</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+  <div class="scan-lines"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="logo"><a href="../index.html" style="color:inherit;text-decoration:none;">
+        <span class="bracket">[</span>QK<span class="bracket">]</span> &mdash; Research &amp; Systems</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Index</a></li>
+        <li><a href="../engineering.html"<>Engineering</a></li>
+        <li><a href="../research.html" class="active"<>Research</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Index</a> / <a href="../research.html">Research</a> / Solana Constellation</div>
+      <h1>Solana Constellation: Fair Internet Capital Markets</h1>
+      <p class="subtitle">
+        <span class="self">Quentin Kniep</span>, Max Resnick, Jakub Sliwinski, Roger Wattenhofer<br>
+        White Paper
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <div class="container">
+      <div class="detail-layout">
+        <div class="detail-main">
+          <h2>Abstract</h2>
+          <div class="abstract">
+            <p>Building a blockchain capable of supporting global financial markets requires a protocol design resistant to manipulation. Safety and liveness properties ensure that the system remains functional, and have been the core subjects of study. Consensus research has greatly advanced the performance of blockchains, but another critical flaw remains prevalent in blockchain networks of today: malicious privileged parties affect latency and ordering of transactions to take advantage of users.</p>
+
+            <p>We present Constellation, a multiple concurrent proposers (MCP) protocol for Solana, that provides an additional, economically motivated property of selective censorship resistance. Intuitively speaking, Constellation ensures that latency and ordering of transactions are fair, fostering a market structure in which users cannot be abused. Constellation achieves the fastest (e.g., 50 ms), protocol-enforced, censorship-resistant economic tick among production blockchain protocols.</p>
+
+            <p>The protocol features a layer of nodes called attesters, which rely on synchronized clocks to enforce timely and censorship-resistant transaction processing. The economic ticks, i.e. intervals of transaction inclusion, are not constrained by the global network delay.</p>
+          </div>
+
+          <figure>
+            <img src="img/constellation.png" alt="Figure">
+          </figure>
+
+          <h2>BibTeX</h2>
+          <div class="abstract">
+            <button class="copy-btn" onclick="copyBibtex(this)">Copy</button>
+            <pre style="background:var(--bg-secondary);padding:1.25rem;font-size:0.78rem;line-height:1.6;overflow-x:auto;font-family:var(--font-code);color:var(--text-secondary);">@misc{kniep2025SolanaConstellation,
+  author    = {Q. Kniep and M. Resnick and J. Slirowski and Roger Wattenhofer},
+  title     = {Solana Constellation: Fair Internet Capital Markets},
+  year      = {2025},
+  howpublished = {\url{https://anza.xyz/constellationwhitepaper}}
+}</pre>
+          </div>
+        </div>
+
+        <div class="detail-sidebar">
+          <div class="pdf-preview">
+            <a href="https://anza.xyz/constellationwhitepaper" target="_blank" rel="noopener noreferrer">
+              <img src="img/constellation-preview.png" alt="PDF Preview" style="width:100%;aspect-ratio:8.5/11;">
+            </a>
+            <a href="https://anza.xyz/constellationwhitepaper" class="download-btn" target="_blank" rel="noopener noreferrer">&#8595; PDF / White Paper</a>
+          </div>
+
+          <div class="sidebar-block" style="margin-top:1rem;">
+            <div class="block-label">Venue</div>
+            <div class="block-value"><span style="color:var(--accent);">White Paper</span></div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Year</div>
+            <div class="block-value">2026</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Authors</div>
+            <div class="block-value"><span style="color:var(--accent);">Quentin Kniep</span><br>
+                        Max Resnick<br>
+                        Jakub Sliwinski<br>
+                        Roger Wattenhofer</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Links</div>
+            <div class="block-value">
+              <a href="https://anza.xyz/constellationwhitepaper" target="_blank" rel="noopener noreferrer">White Paper &#8599;</a>
+              <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar &#8599;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-left">&copy; 2025 Quentin Kniep<br>
+        Built with conviction (and <a href="https://opencode.ai/" target="_blank" rel="noopener noreferrer">OpenCode</a>)</div>
+      <div class="footer-links">
+        <a href="https://github.com/qkniep" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://twitter.com/qkniep" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://www.linkedin.com/in/qkniep" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:hello@quentinkniep.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/grain.js"></script>
+</body>
+</html>

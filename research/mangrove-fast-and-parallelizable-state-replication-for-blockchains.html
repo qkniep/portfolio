@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mangrove: Fast and Parallelizable state replicatio... &mdash; Quentin Kniep</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+  <div class="scan-lines"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="logo"><a href="../index.html" style="color:inherit;text-decoration:none;">
+        <span class="bracket">[</span>QK<span class="bracket">]</span> &mdash; Research &amp; Systems</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Index</a></li>
+        <li><a href="../engineering.html"<>Engineering</a></li>
+        <li><a href="../research.html" class="active"<>Research</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Index</a> / <a href="../research.html"<>Research</a> / Mangrove: Fast and Parallelizable state replicatio...</div>
+      <h1>Mangrove: Fast and Parallelizable state replication for Blockchains</h1>
+      <p class="subtitle">
+        Anton Paramonov, Yann Vonlanthen, <span class="self">Quentin Kniep</span>, Jakub Sliwinski, Roger Wattenhofer<br>
+        Preprint
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <div class="container">
+      <div class="detail-layout">
+        <div class="detail-main">
+          <h2>Abstract</h2>
+          <div class="abstract">
+            <p>Mangrove is a novel scaling approach to building blockchains with parallel smart contract support. Unlike in monolithic blockchains, where a single consensus mechanism determines a strict total order over all transactions, Mangrove uses separate consensus instances per smart contract, without a global order. To allow multiple instances to run in parallel while ensuring that no conflicting transactions are committed, we propose a mechanism called Parallel Optimistic Agreement. Additionally, for simple transactions, we leverage a lightweight Byzantine Reliable Broadcast primitive to reduce latency. Mangrove is optimized for performance under optimistic conditions, where there is no misbehavior and the network is synchronous. Under these conditions, our protocol can achieve a latency of 2 communication steps between creating and executing a transaction.</p>
+          </div>
+
+          <figure>
+            <img src="img/mangrove.png" alt="Figure">
+          </figure>
+
+          <h2>BibTeX</h2>
+          <div class="abstract">
+            <button class="copy-btn" onclick="copyBibtex(this)">Copy</button>
+            <pre style="background:var(--bg-secondary);padding:1.25rem;font-size:0.78rem;line-height:1.6;overflow-x:auto;font-family:var(--font-code);color:var(--text-secondary);">@article{paramonov2025Mangrove:Fast,
+  author    = {Anton Paramonov and Yann Vonlanthen and Q. Kniep and Jakub Sliwinski and Roger Wattenhofer},
+  title     = {Mangrove: Fast and Parallelizable state replication for Blockchains},
+  year      = {2025}
+}</pre>
+          </div>
+        </div>
+
+        <div class="detail-sidebar">
+          <div class="pdf-preview">
+            <a href="https://arxiv.org/abs/2509.06616" target="_blank" rel="noopener noreferrer">
+              <img src="img/mangrove-preview.png" alt="PDF Preview" style="width:100%;aspect-ratio:8.5/11;">
+            </a>
+            <a href="https://arxiv.org/abs/2509.06616" class="download-btn" target="_blank" rel="noopener noreferrer">&#8595; PDF / arXiv</a>
+          </div>
+
+          <div class="sidebar-block" style="margin-top:1rem;">
+            <div class="block-label">Venue</div>
+            <div class="block-value"><span style="color:var(--text-muted);">Preprint</span></div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Year</div>
+            <div class="block-value">2025</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Authors</div>
+<div class="block-value">          Anton Paramonov<br>
+                        Yann Vonlanthen<br>
+                        <span style="color:var(--accent);">Quentin Kniep</span><br>
+                        Jakub Sliwinski<br>
+                        Roger Wattenhofer</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Citations</div>
+            <div class="block-value">1 on Google Scholar</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Links</div>
+            <div class="block-value">
+              <a href="https://arxiv.org/abs/2509.06616" target="_blank" rel="noopener noreferrer">arXiv &#8599;</a>
+              <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar &#8599;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-left">&copy; 2025 Quentin Kniep<br>
+        Built with conviction (and <a href="https://opencode.ai/" target="_blank" rel="noopener noreferrer">OpenCode</a>)</div>
+      <div class="footer-links">
+        <a href="https://github.com/qkniep" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://twitter.com/qkniep" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://www.linkedin.com/in/qkniep" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:hello@quentinkniep.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/grain.js"></script>
+</body>
+</html>

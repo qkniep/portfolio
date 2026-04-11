@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilotfish: Distributed Transaction Execution for L... &mdash; Quentin Kniep</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+  <div class="scan-lines"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="logo"><a href="../index.html" style="color:inherit;text-decoration:none;">
+        <span class="bracket">[</span>QK<span class="bracket">]</span> &mdash; Research &amp; Systems</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Index</a></li>
+        <li><a href="../engineering.html"<>Engineering</a></li>
+        <li><a href="../research.html" class="active"<>Research</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Index</a> / <a href="../research.html"<>Research</a> / Pilotfish: Distributed Transaction Execution for L...</div>
+      <h1>Pilotfish: Distributed Transaction Execution for Lazy Blockchains</h1>
+      <p class="subtitle">
+        <span class="self">Quentin Kniep</span>, Lefteris Kokoris-Kogias, Alberto Sonnino, Igor Zablotchi, Nuda Zhang<br>
+        FC 2025
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <div class="container">
+      <div class="detail-layout">
+        <div class="detail-main">
+          <h2>Abstract</h2>
+          <div class="abstract">
+            <p>Scalability is a crucial requirement for modern large-scale systems, enabling elasticity and ensuring responsiveness under varying load. While cloud systems have achieved scalable architectures, blockchain systems remain constrained by the need to over-provision validator machines to handle peak load. This leads to resource inefficiency, poor cost scaling, and limits on performance. To address these challenges, we introduce Pilotfish, the first scale-out transaction execution engine for blockchains. Pilotfish enables validators to scale horizontally by distributing transaction execution across multiple worker machines, allowing elasticity without compromising consistency or determinism. It integrates seamlessly with the lazy blockchain architecture, completing the missing piece of execution elasticity. To achieve this, Pilotfish tackles several key challenges: ensuring scalable and strongly consistent distributed transactions, handling partial crash recovery with lightweight replication, and maintaining concurrency with a novel versioned-queue scheduling algorithm. Our evaluation shows that Pilotfish scales linearly up to at least eight workers per validator for compute-bound workloads, while maintaining low latency. By solving scalable execution, Pilotfish brings blockchains closer to achieving end-to-end elasticity, unlocking new possibilities for efficient and adaptable blockchain systems.</p>
+          </div>
+
+          <figure>
+            <img src="img/pilotfish.png" alt="Figure">
+          </figure>
+
+          <h2>BibTeX</h2>
+          <div class="abstract">
+            <button class="copy-btn" onclick="copyBibtex(this)">Copy</button>
+            <pre style="background:var(--bg-secondary);padding:1.25rem;font-size:0.78rem;line-height:1.6;overflow-x:auto;font-family:var(--font-code);color:var(--text-secondary);">@article{kniep2024Pilotfish:Distributed,
+  author    = {Q. Kniep and Lefteris Kokoris-Kogias and Alberto Sonnino and Igor Zablotchi and Nuda Zhang},
+  title     = {Pilotfish: Distributed Transaction Execution for Lazy Blockchains},
+  year      = {2024}
+}</pre>
+          </div>
+        </div>
+
+        <div class="detail-sidebar">
+          <div class="pdf-preview">
+            <a href="https://arxiv.org/abs/2401.16292" target="_blank" rel="noopener noreferrer">
+              <img src="img/pilotfish-preview.png" alt="PDF Preview" style="width:100%;aspect-ratio:8.5/11;">
+            </a>
+            <a href="https://arxiv.org/abs/2401.16292" class="download-btn" target="_blank" rel="noopener noreferrer">&#8595; PDF / arXiv</a>
+          </div>
+
+          <div class="sidebar-block" style="margin-top:1rem;">
+            <div class="block-label">Venue</div>
+            <div class="block-value"><span class="tag venue">FC 2025</span></div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Year</div>
+            <div class="block-value">2025</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Authors</div>
+            <div class="block-value"><span style="color:var(--accent);">Quentin Kniep</span><br>
+                        Lefteris Kokoris-Kogias<br>
+                        Alberto Sonnino<br>
+                        Igor Zablotchi<br>
+                        Nuda Zhang</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Citations</div>
+            <div class="block-value">10 on Google Scholar</div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="block-label">Links</div>
+            <div class="block-value">
+              <a href="https://arxiv.org/abs/2401.16292" target="_blank" rel="noopener noreferrer">arXiv &#8599;</a>
+              <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar &#8599;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-left">&copy; 2025 Quentin Kniep<br>
+        Built with conviction (and <a href="https://opencode.ai/" target="_blank" rel="noopener noreferrer">OpenCode</a>)</div>
+      <div class="footer-links">
+        <a href="https://github.com/qkniep" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=fiMTSDcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://twitter.com/qkniep" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://www.linkedin.com/in/qkniep" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:hello@quentinkniep.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/grain.js"></script>
+</body>
+</html>
